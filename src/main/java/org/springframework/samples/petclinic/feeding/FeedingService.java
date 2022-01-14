@@ -18,7 +18,7 @@ public class FeedingService {
     }
 
     public FeedingType getFeedingType(String typeName) {
-        return null;
+        return feedingRepository.findFeedingTypesByName(typeName);
     }
 
     public Feeding save(Feeding p) throws UnfeasibleFeedingException {
